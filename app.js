@@ -30,8 +30,8 @@ app.get("/api/getMovie/:movie_id", getMovie)
 app.get("/api/getAllMovie", getAllMovie)
 app.patch("/api/editMovie", updateData)
 app.delete("/api/deleteMovie/:movie_id", deleteMovie)
-app.get("/api/movies/openAI/recommendation", movieRecommend)
+app.post("/api/movies/openAI/recommendation", movieRecommend)
 
-app.listen(4500, (req,res) => {
+app.listen(3500, (req,res) => {
     console.log("server running on port localhost:3500")
 })
